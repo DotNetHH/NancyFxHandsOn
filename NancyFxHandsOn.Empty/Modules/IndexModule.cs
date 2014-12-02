@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Nancy;
+﻿using Nancy;
 
 namespace NancyFxHandsOn.Empty.Modules
 {
