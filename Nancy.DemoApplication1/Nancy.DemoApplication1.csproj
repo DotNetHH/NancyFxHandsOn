@@ -86,10 +86,12 @@
     <Compile Include="Model\LogEntry.cs" />
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Modules\NestedRouteModule.cs" />
+    <Compile Include="Modules\SecureModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Views\secure.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
