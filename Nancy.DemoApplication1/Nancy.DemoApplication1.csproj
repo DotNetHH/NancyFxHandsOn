@@ -87,6 +87,7 @@
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Modules\NestedRouteModule.cs" />
     <Compile Include="Modules\SecureModule.cs" />
+    <Compile Include="NotFoundStatusCodeHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
