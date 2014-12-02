@@ -1,8 +1,12 @@
-﻿@{
+﻿@using Nancy.ViewEngines.Razor
+@{
     Layout = "_Layout.cshtml";
 }
+@inherits NancyRazorViewBase<NancyFxHandsOn.CRUD.Person>
 
-<h1>Fake, fill in your stuff here :)</h1>
+<h1>Example Person: @Model.Id: @Model.FirstName @Model.LastName</h1>
+
+<h2>Here is a table, use it for you list of persons</h2>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -84,48 +88,6 @@
                 <td>semper</td>
                 <td>porta</td>
                 <td>Mauris</td>
-            </tr>
-            <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-            </tr>
-            <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-            </tr>
-            <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-            </tr>
-            <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-            </tr>
-            <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-            </tr>
-            <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
             </tr>
         </tbody>
     </table>

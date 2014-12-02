@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="CrudModule.cs" />
+    <Compile Include="CrudRepository.cs" />
     <Compile Include="IndexModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
