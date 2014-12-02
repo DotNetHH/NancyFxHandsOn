@@ -7,14 +7,9 @@ namespace NancyFxHandsOn.CRUD
     {
         private readonly ICrudRepository _repository;
 
-        /// <summary>
-        /// Your CRUD Module with empty methods:
-        /// 
-        /// </summary>
-        public CrudModule(ICrudRepository repository/* try adding an ICrudRepository parameter here */) // look up the Nancy TinyIoC
+        public CrudModule(/* try adding an ICrudRepository parameter here */) // google "Nancy TinyIoC", it will inject your dependency ;)
             : base("crud")
         {
-            _repository = repository;
             // Create
             Post["/"] = _ => View["Views/crud"];
             // Read
