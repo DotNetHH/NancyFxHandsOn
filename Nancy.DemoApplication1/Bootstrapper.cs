@@ -15,7 +15,16 @@ namespace Nancy.DemoApplication1
 
         protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
         {
-            Trace.WriteLine(string.Format("Nancy request: {0} {1}", context.Request.Method, context.Request.Url));
+            pipelines.BeforeRequest += ctx =>
+            {
+                Trace.WriteLine(string.Format("Nancy request: {0} {1}", context.Request.Method, context.Request.Url));
+                return null;
+            };
+
+            pipelines.AfterRequest += ctx =>
+            {
+                Trace.WriteLine(string.Format("Request result: {0}", ctx.Response.StatusCode));
+            };
         }
     }
 }
